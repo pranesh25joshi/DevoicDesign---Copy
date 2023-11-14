@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Acme', sans-serif; */
+    /* font-family: 'Inika', serif; */
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+:root{
+    --colormax:#E9F4FA;
+    --light-blue:#90B1FF;
+    --dark-blue:#0F62FE;
+}
+
+/* ------------------------------------cards section----------------------------------- */
+
+body #head-padding{
+    margin-top: 7%;
+    margin-bottom: 5%;
+    padding-left:5%;
+    padding-right:5%;
+    text-align: center;
+    font-weight: bold;
+    color: #4c4e61;
+    
+}
+
+body .container-of-box{
+    width: 100%;
+    /* height: 50vh; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    row-gap: 20px;
+
+}
+body .container-of-box .box{
+    width: 25%;
+    padding-top: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 40px;
+    margin: 16px;
+    border: 4px;
+    border-radius: 5%;
+    font-size: 98%;
+    line-height: 1.6;
+    /* box-shadow: 5px 5px var(--colormax); */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.7s;
+    /* gap: 15px; */
+}
+
+body .container-of-box .box:hover{
+    transform: scale(1.03);
+}
+body .container-of-box .box img{
+    height: 120px;
+    width: 120px;
+    object-fit: contain;
+}
+
+body .container-of-box .box h2{
+    padding-top: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+    /* color: white; */
+}
+
+@media only screen and (max-width: 600px) {
+    body .container-of-box .box h2{
+        padding-top:0px;
+        padding-bottom: 8px;
+        text-align: center;
+    }
+    body .container-of-box .box{
+      /* background-color: lightblue; */
+      width: 44%;
+      padding-top:10px;
+      padding-bottom: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin: 7px;
+      font-size: 75%;
+      /* box-shadow: 5px 5px 2px 2px var(--colormax);*/
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    body .container-of-box .box img{
+        height: 70px;
+        width: 70px;
+        padding-bottom: 3%;
+        object-fit: contain;
+    }
+
+    body .container-of-box .box p{
+        text-align: center;
+    }
+  }
+
+
+/*-----------------------------------Time section--------------------------------  */
+
+body .timer-button{
+    width: 100%;
+    /* height: 60vh; */
+    display: flex;
+    font-size: 2rem;
+    padding: 5%;
+    padding-right: 8%;
+    padding-bottom: 1%;
+    /* right: 9%; */
+    /* margin:10%; */
+    justify-content: space-between;
+    /* background-color: linear-gradient(-45deg, #2365FF, #0002C2);; */
+    /* background-image: linear-gradient(to bottom right, #2365FF, #0002C2); */
+    /* animation: mymove 5s infinite; */
+    /* animation: gradient 15s ease infinite; */
+    background: linear-gradient(271deg, #0002c2, #2365ff, #0362a5, #56DAF3);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 12s ease infinite;
+    -moz-animation: AnimationName 12s ease infinite;
+    animation: AnimationName 12s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 23%}
+    50%{background-position:100% 78%}
+    100%{background-position:0% 23%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 23%}
+    50%{background-position:100% 78%}
+    100%{background-position:0% 23%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 23%}
+    50%{background-position:100% 78%}
+    100%{background-position:0% 23%}
+}
+
+body .timer-button .timer{
+    color: white;
+    display: flex;
+    width: 55%;
+    align-items: center;
+    justify-content: right;
+
+}
+body .timer-button .timer .clock .num p{
+    font-size: 5.5rem;
+}
+body .timer-button .timer .colon{
+    font-size: 300%;
+    bottom: 20%;
+}
+body .timer-button .timer .clock{
+    padding: 2%;
+    /* background-color:white; */
+    /* top: 20%; */
+}
+body .timer-button .timer .colon{
+    padding-bottom: 8%;
+}
+body .timer-button .timer .clock .num{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+body .timer-button .timer-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45%;
+    font-size: 1em;
+}
+/* body .timer-button .timer-content h2{
+    color: white;
+} */
+body .timer-button .timer-content h2{
+    color: white;
+}
+body .timer-button .timer-content p{
+    font-size: 60%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: white;
+}
+body .timer-button .timer .clock .num span{
+    font-weight:600;
+    font-size: calc(70/100*2rem);
+}
+body .button {
+    display: flex;
+    margin-bottom: 5%;
+    background-color: white;
+}
+body #btn-id{
+    background-color: var(--dark-blue);
+    color: white;
+    padding-bottom: 5%;
+    background: linear-gradient(271deg, #0002c2, #2365ff, #0362a5, #56DAF3);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 12s ease infinite;
+    -moz-animation: AnimationName 12s ease infinite;
+    animation: AnimationName 12s ease infinite;
+}
+
+body .button .btn-2{
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight:600;
+    background-color: white;
+    color: var(--dark-blue);
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+/* body .button .btn-2:hover{
+    background-color: rgb(51, 44, 44);
+    color:#0F62FE;
+    scale: (2);
+} */
+
+@media only screen and (max-width: 1100px){
+    body .timer-button .timer .clock .num p{
+        font-size: 4rem;
+    }
+}
+@media only screen and (max-width: 1000px){
+    body .timer-button .timer .clock .num p{
+        font-size: 3rem;
+    }
+}
+@media only screen and (max-width: 800px){
+    body .timer-button{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap-reverse;
+        /* display: block; */
+        /* width: 1rem; */
+        align-items: center;
+        /* height: 100%; */
+        padding-left:16%;
+        padding-right:16%;
+        /* margin-bottom: 10%; */
+    }
+    body .timer-button .timer{
+        width: 100%;
+        justify-content: center;
+    }
+    body .timer-button .timer-content{
+        width: 100%;
+    }
+    body .timer-button .timer-content h2{
+        font-size: 35px;
+        text-align: center;
+    }
+    body .timer-button .timer-content p{
+        text-align: center;
+    }
+
+    body .button .btn-2{
+        padding-left: 0;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+        width: 70%;
+        /* background-color: var(--dark-blue);
+        color: white; */
+        /* margin-left: 50%;
+        margin-right: 50%; */
+        /* justify-self: center; */
+    }
+    body #btn-id{
+        background-color: white;
+        /* background: none; */
+        color: white;
+    }
+    body .button{
+        justify-content: center;
+    }
+    body .timer-button .timer .clock .num p{
+        font-size: 2rem;
+    }
+    body .timer-button .timer .clock .num span{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    body .timer-button .timer .clock{
+        width: 82.6px;
+    }
+    body .timer-button .timer .colon{
+        font-size: 200%;
+        bottom: 20%;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    body .timer-button{
+        padding-left: 9%;
+        padding-right: 9%;
+    }
+}
+
+
+
+
+/* -----------------------------sukriti-------------------------- */
